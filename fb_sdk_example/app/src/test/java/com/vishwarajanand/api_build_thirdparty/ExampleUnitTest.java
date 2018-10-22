@@ -1,4 +1,4 @@
-package com.vishwarajanand.fb_sdk_example;
+package com.vishwarajanand.api_build_thirdparty;
 
 import org.junit.Test;
 

@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.vishwarajanand.fb_sdk_example"
+        applicationId "com.vishwarajanand.api_build_thirdparty"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
@@ -25,4 +25,25 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    // Facebook Core only (Analytics)
+    implementation 'com.facebook.android:facebook-core:4.33.0'
+
+    // Facebook Login only
+    implementation 'com.facebook.android:facebook-login:[4,5)'
+
+    // Facebook Share only
+    implementation 'com.facebook.android:facebook-share:4.33.0'
+
+    // Facebook Places only
+    implementation 'com.facebook.android:facebook-places:4.33.0'
+
+    // Facebook Messenger only
+    implementation 'com.facebook.android:facebook-messenger:4.33.0'
+
+    // Facebook App Links only
+    implementation 'com.facebook.android:facebook-applinks:4.33.0'
+
+    // Facebook Android SDK (everything)
+    implementation 'com.facebook.android:facebook-android-sdk:4.33.0'
 }

@@ -1,4 +1,4 @@
-package com.vishwarajanand.fb_sdk_example;
+package com.vishwarajanand.api_build_thirdparty;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.vishwarajanand.fb_sdk_example", appContext.getPackageName());
+        assertEquals("com.vishwarajanand.api_build_thirdparty", appContext.getPackageName());
     }
 }

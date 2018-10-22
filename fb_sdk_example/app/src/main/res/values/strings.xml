@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">fb_sdk_example</string>
+    <string name="app_name">FB SDK Example</string>
+    <string name="facebook_app_id">279068716055138</string>
+    <string name="fb_login_protocol_scheme">fb279068716055138</string>
 </resources>
