@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
+import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 
@@ -34,7 +35,6 @@ public class Home extends AppCompatActivity {
         registerCallback();
     }
 
-    /** Called when the user taps the Send button */
     public void sendMessage(View view) {
         Intent intent = new Intent(this, UserProfileActivity.class);
         String message = ((TextView) findViewById(R.id.displayText)).getText().toString();
@@ -53,12 +53,12 @@ public class Home extends AppCompatActivity {
         // If you are using in a fragment, call loginButton.setFragment(this);
 
         // Callback registration
-        loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+        LoginManager.getInstance().registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
                 // App code
                 Log.d(TAG, "SUCCESS: " + loginResult.getAccessToken());
-                displayText.setText("Hello " + loginResult.toString());
+                displayText.setText("Logged in user id: " + loginResult.getAccessToken().getUserId());
             }
 
             @Override

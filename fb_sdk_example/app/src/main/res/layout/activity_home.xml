@@ -30,6 +30,7 @@
         android:layout_height="wrap_content"
         android:text="Jump to profile page"
         android:layout_marginTop="100sp"
+        android:visibility="invisible"
         android:onClick="sendMessage"/>
 
 </android.widget.RelativeLayout>
