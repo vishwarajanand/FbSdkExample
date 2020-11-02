@@ -1,7 +1,8 @@
 package com.vishwarajanand.api_build_thirdparty;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class UserProfileActivity extends AppCompatActivity {
 
